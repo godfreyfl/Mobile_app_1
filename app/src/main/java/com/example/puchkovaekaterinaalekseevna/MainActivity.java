@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intent = new Intent(this, MainActivity2.class);
             TextView textView = findViewById(R.id.editTextText);
             String text = textView.getText().toString();
-            intent.putExtra(KEY, text);
+            intent.putExtra(KEY, text); // помещает полученный текст в Intent с использованием ключа KEY
             startActivity(intent);
         } else {
 
